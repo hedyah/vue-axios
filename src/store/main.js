@@ -29,8 +29,10 @@ export const useMainStore = defineStore ('main', {
             return undefined;
         },
         snakeJoke : state =>{
+            //i tried to add the _ but i struggled and it broke my code
             if (state.jokeResponse != undefined){
-                return state.jokeResponse.data.joke.str.replace(" ", "_");
+                //return state.jokeresponse.data.joke.str(" ", "_")
+                return state.jokeResponse.data.joke;
             }
             return undefined;
         }
